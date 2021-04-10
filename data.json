@@ -1,0 +1,138 @@
+[
+    {
+        "ID": Integer,
+        "Username": String,
+        "email": String,
+        "password": String,
+    },
+    
+    {
+        "thID": Integer,
+        "thName": String,
+        "resources":{
+                    "gold": 100,
+                    "food:": 100,
+                    "soldier": 0,
+                    "medal": 0
+                    }
+    },
+    
+    {
+        "marketID": Integer,
+        "marketName": String,
+        "gold": Integer
+    },
+    
+    {
+        "farmID": Integer,
+        "farmName": String,
+        "food": Integer
+    },
+    
+    {
+        "barrackID": Integer,
+        "barrackName": String,
+        "soldier": Integer
+    },
+    
+    
+    
+    {
+        "ID": 1,
+        "username": "dadangkonelo",
+        "email": "dangkon@yahu.com",
+        "password": "dadang1lopyu",
+        "townhall": {
+                        "thName": "Dadang Wall",
+                        "resources":{
+                                        "gold": 100,
+                                        "food:": 100,
+                                        "soldier": 0,
+                                        "medal": 0
+                                    },
+                        "buildings":{
+                                        "market":   [
+                                                        {
+                                                            "marketID": 1,
+                                                            "marketName": "dadang-mall",
+                                                            "gold": 20
+                                                        },
+                                                        {
+                                                            "marketID": 2,
+                                                            "marketName": "dadang-mall-2",
+                                                            "gold": 20
+                                                        },
+                                                    ],
+                                        "farm":     [
+                                                        {
+                                                            "farmID": 1,
+                                                            "farmName": "dadang-farm",
+                                                            "food": 20
+                                                        },
+                                                        {
+                                                            "farmID": 2,
+                                                            "farmName": "dadang-farm-2",
+                                                            "food": 20
+                                                        },
+                                                    ],
+                                        "barrack":  [
+                                                        {
+                                                            "barrackID": 1,
+                                                            "barrackName": "dadang-troops",
+                                                            "soldier": 20
+                                                        },
+                                                    ],
+                                    }
+                    }
+    },
+    
+    {
+        "ID": 2,
+        "username": "dudung",
+        "email": "dudungman@mail.com",
+        "password": "dudungdandarman",
+        "townhall": {
+                        "thName": "Dudung Town",
+                        "resources":{
+                                        "gold": 100,
+                                        "food:": 100,
+                                        "soldier": 0,
+                                        "medal": 0
+                                    },
+                        "buildings":{
+                                        "market":   [
+                                                        {
+                                                            "marketID": 3,
+                                                            "marketName": "dudung-lapak",
+                                                            "gold": 20
+                                                        },
+                                                        {
+                                                            "marketID": 4,
+                                                            "marketName": "buka-dadang-2",
+                                                            "gold": 20
+                                                        },
+                                                    ],
+                                        "farm":     [
+                                                        {
+                                                            "farmID": 3,
+                                                            "farmName": "kebun-dudung",
+                                                            "food": 20
+                                                        },
+                                                    ],
+                                        "barrack":  [
+                                                        {
+                                                            "barrackID": 3,
+                                                            "barrackName": "dudung-army",
+                                                            "soldier": 20
+                                                        },
+                                                        {
+                                                            "barrackID": 4,
+                                                            "barrackName": "dudung-army-2",
+                                                            "soldier": 20
+                                                        },
+                                                    ],
+                                    }
+                    }
+    },
+    
+]
