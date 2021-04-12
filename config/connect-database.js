@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connect = () => {
     const db = mongoose.connection;
-    const pathUrl = 'mongodb://localhost/db_cov';
+    const pathUrl = process.env.DB_URI;
     const connectOption = {
         useNewUrlParser: true,
         useUnifiedTopology: true,
