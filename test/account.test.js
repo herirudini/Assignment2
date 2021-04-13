@@ -37,9 +37,9 @@
 // });
 
 
-const app = require('../app.js');
+const app = require('../APIs/app.js');
 const req = require('supertest')
-const accountController = require('../controllers/account-controller.js')
+const accountController = require('../APIs/controllers/account-controller.js')
 const mongoose = require('mongoose');
 const userId = new mongoose.Types.ObjectId();
 
