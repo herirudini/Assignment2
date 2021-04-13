@@ -1,7 +1,8 @@
 const User = require('../models/User.js');
 const bcrypt =  require('bcrypt');
 const jwt = require('jsonwebtoken');
-const temp = require('../config/tmp.json')
+const temp = require('../../config/tmp.json')
+const validator = require('mongoose-validators')
 
 class controller {
     static signup (req, res) {
@@ -23,7 +24,7 @@ class controller {
         .then((result) => {
           res.status(201).json({message: "signup success: please login", data: result})
           console.log("new user created: "+result)
-          // res.redirect('/login');
+          // res.redirect('../login');
         })
         .catch((err) => {
           // throw ({name: 'invalid_email'})

@@ -2,15 +2,15 @@ const mongoose = require('mongoose');
 
 const connect = () => {
     const db = mongoose.connection;
-    const pathUrl = process.env.DB_URI;
+    const path = process.env.DB_URI;
     const connectOption = {
-        useNewUrlParser: true,
+        useNewUrIParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true,
         useFindAndModify: false
     }
-
-    mongoose.connect(pathUrl, connectOption)
+    mongoose.set('runValidators', true)
+    mongoose.connect(path, connectOption)
 
 
     db.on('error', console.error.bind(console, "database connection error:"));

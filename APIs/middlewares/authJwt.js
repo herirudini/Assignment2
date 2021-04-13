@@ -1,7 +1,7 @@
 
 const jwt = require("jsonwebtoken");
 const bcrypt =  require('bcrypt');
-const temp = require('../config/tmp.json');
+const temp = require('../../config/tmp.json');
 const User = require("../models/User");
 const Market = require('../models/Market.js');
 const Farm = require('../models/Farm.js');

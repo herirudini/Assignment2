@@ -1,7 +1,7 @@
 
-const Market = require('../models/Market.js');
-const Farm = require('../models/Farm.js');
-const Barrack = require('../models/Barrack.js');
+const Market = require('../APIs/models/Market.js');
+const Farm = require('../APIs/models/Farm.js');
+const Barrack = require('../APIs/models/Barrack.js');
 const cron = require('node-cron');
 
 const generateResources = cron.schedule(

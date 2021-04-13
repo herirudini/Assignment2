@@ -1,4 +1,4 @@
-const APIs = require('./app.js')
+const APIs = require('./APIs/app.js')
 
 const connectDB = require('./config/connect-database.js');
 const generatingMachine = require('./config/generating-machine.js')

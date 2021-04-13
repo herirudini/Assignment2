@@ -42,7 +42,7 @@ module.exports = (err, req, res, next)=>{
             break;
         case "invalid_email":
             code = 422;
-            message = "Invalid email!"
+            message = "Invalid: Please input a valid email!"
             break;
         default:
             code = 500

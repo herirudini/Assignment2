@@ -10,7 +10,6 @@ class controller {
         .then((result) => {
             if (result == null) {
               throw({name: 'not_found'})
-              // res.status(404).json({message: "account already deleted", data: result});
             }
             res.status(200).json({message: "Your data", data: result});
         })
@@ -27,13 +26,11 @@ class controller {
         })
         .catch((err) => {
           next(err)
-            // res.status(500).json({message: "update failed!", data: err});
         });
     }
     static changeEmail (req,res,next) {
-        const newEmail = req.body.new_email;
 
-        User.findByIdAndUpdate(req.user_id, {email: validator.isEmail(newEmail)}, {new: true})
+        User.findByIdAndUpdate(req.user_id, {email: req.body.new_email}, {new: true})
         .then((result) => {
             res.status(200).json({message: "Email updated", data: result});
             next()
@@ -49,8 +46,8 @@ class controller {
             next()
         })
         .catch((err) => {
+          console.log(err)
           next(err)
-            // res.status(422).json({message: "failed to change password!", data: err});
         });
     }
     static async deleteMyAccount (req,res,next) {
